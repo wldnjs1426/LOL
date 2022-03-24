@@ -33,18 +33,6 @@ type HeaderProps = {
 
 const Header = () => {
 
-    async function getData() {
-        try {
-            //응답 성공
-            const response = await axios.get('https://kr.api.riotgames.com/lol/summoner/v4/summoners/by-name/꽂닙이?api_key='+process.env.REACT_APP_KAKAOMAP_API_KEY);
-            console.log(response);
-        } catch (error) {
-            //응답 실패
-            console.error(error);
-        }
-    }
-
-    getData();
 
     return (
         <Wrap>
